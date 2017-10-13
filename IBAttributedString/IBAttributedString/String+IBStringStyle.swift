@@ -33,7 +33,7 @@ extension String {
 	Defaults to the full range of the `NSString`.
 	- returns: An array of the paragraph ranges occurring within the provided subrange.
 	*/
-	func paragraphRanges(on range: NSRange? = nil) -> [NSRange] {
+	public func paragraphRanges(on range: NSRange? = nil) -> [NSRange] {
 		return (self as NSString).paragraphRanges(on: range)
 	}
 }

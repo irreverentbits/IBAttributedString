@@ -36,7 +36,7 @@ extension NSMutableAttributedString {
 	Defaults to the full range of the `NSString`.
 	- returns: An array of the paragraph ranges occurring within the provided subrange.
 	*/
-	func paragraphRanges(on range: NSRange? = nil) -> [NSRange] {
+	public func paragraphRanges(on range: NSRange? = nil) -> [NSRange] {
 		return string.paragraphRanges(on: range)
 	}
 }
@@ -67,7 +67,7 @@ extension NSMutableAttributedString {
 		return styles
 	}
 
-	open func style(with styles: [IBStringStyle], onRange: NSRange? = nil) {
+	public func style(with styles: [IBStringStyle], onRange: NSRange? = nil) {
 		let range = onRange ?? NSRange(location: 0, length: self.length)
 		
 		// Apply text styles
