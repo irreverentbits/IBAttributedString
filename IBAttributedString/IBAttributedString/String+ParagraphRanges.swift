@@ -17,16 +17,7 @@ extension String {
 			return NSRange(location: 0, length: count)
 		}
 	}
-	
-	/**
-	A `Range` for the full length of the `String`.
-	*/
-//	var range: Range<String.Index> {
-//		get {
-//			return Range(startIndex ..< endIndex)
-//		}
-//	}
-	
+		
 	/**
 	Provides the range of each paragraph in the string or in a subrange of the `NSString`.
 	- parameter range: The subrange of the string over which paragraph ranges should be returned.

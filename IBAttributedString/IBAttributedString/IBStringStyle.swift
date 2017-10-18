@@ -11,8 +11,8 @@ import UIKit
 
 /**
 `IBStringStyle` provides a method for describing string style options and their values. Paired with the
-`NSMutableAttributedString` extension function for applying an array of `IBStringStyle` options, `IBStringStyle`
-allows concise application of styles.
+`NSMutableAttributedString` extension function for applying an array of `IBStringStyle` enumerations, `IBStringStyle`
+allows concise application of string styles.
 */
 public enum IBStringStyle {
 	// Character styles
@@ -36,24 +36,11 @@ public enum IBStringStyle {
 	//    case writingDirection() 	// This is complicated. Needs more investigation.
 	//    case verticalGlyphForm() 	// Currently ignored on iOS. Only horizontal glyphs are supported.
 	
-	// Paragraph styles
-	case paragraphLineSpacing(CGFloat)
-	case paragraphSpacing(CGFloat)
-	case paragraphAlignment(NSTextAlignment)
-	case paragraphFirstLineHeadIndent(CGFloat)
-	case paragraphHeadIndent(CGFloat)
-	case paragraphTailIndent(CGFloat)
-	case paragraphLineBreakMode(NSLineBreakMode)
-	case paragraphMinimumLineHeight(CGFloat)
-	case paragraphMaximumLineHeight(CGFloat)
-	case paragraphBaseWritingDirection(NSWritingDirection)
-	case paragraphLineHeightMultiple(CGFloat)
-	case paragraphSpacingBefore(CGFloat)
-	case paragraphHyphenationFactor(Float)
-	case paragraphTabStops([NSTextTab])
-	case paragraphDefaultTabInterval(CGFloat)
-	case paragraphAllowsDefaultTighteningForTruncation(Bool)
-	
+	/**
+	Produces an `NSAttributedString` style dictionary from an array of `IBParagraphStyle` enums.
+	- Parameter styles: An array of `IBStringStyle` enums that describe the styles to include in the style dictionary.
+	- Returns: A dictionary of `NSAttributedString` style keys and values.
+	*/
 	static func attributesDict(for styles: [IBStringStyle]) -> [NSAttributedStringKey: AnyObject] {
 		var attributes = [NSAttributedStringKey: AnyObject]()
 		
@@ -104,8 +91,6 @@ public enum IBStringStyle {
 				
 			case .expansion(let expansion):
 				attributes[NSAttributedStringKey.expansion] = NSNumber(value: expansion)
-				
-			default: break
 			}
 		}
 		

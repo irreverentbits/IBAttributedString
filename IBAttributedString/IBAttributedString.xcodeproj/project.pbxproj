@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5015E11B1F971BA700907538 /* IBParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5015E11A1F971BA700907538 /* IBParagraphStyle.swift */; };
+		5015E11D1F973A8C00907538 /* NSAttributedString+IBParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5015E11C1F973A8C00907538 /* NSAttributedString+IBParagraphStyle.swift */; };
+		5015E11F1F9742FD00907538 /* NSAttributedString+ParagraphRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5015E11E1F9742FD00907538 /* NSAttributedString+ParagraphRanges.swift */; };
+		5015E1211F97460600907538 /* NSAttributedString+ParagraphStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5015E1201F97460600907538 /* NSAttributedString+ParagraphStyles.swift */; };
 		501F02561F7B70DC0029CBCE /* IBAttributedStringEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F02551F7B70DC0029CBCE /* IBAttributedStringEnums.swift */; };
 		501F02581F7B71530029CBCE /* IBStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F02571F7B71530029CBCE /* IBStringStyle.swift */; };
 		501F025A1F7B72120029CBCE /* NSAttributedString+IBStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F02591F7B72120029CBCE /* NSAttributedString+IBStringStyle.swift */; };
-		501F025C1F7B742F0029CBCE /* NSString+IBStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025B1F7B742F0029CBCE /* NSString+IBStringStyle.swift */; };
-		501F025E1F7B74520029CBCE /* String+IBStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025D1F7B74520029CBCE /* String+IBStringStyle.swift */; };
+		501F025C1F7B742F0029CBCE /* NSString+ParagraphRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025B1F7B742F0029CBCE /* NSString+ParagraphRanges.swift */; };
+		501F025E1F7B74520029CBCE /* String+ParagraphRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025D1F7B74520029CBCE /* String+ParagraphRanges.swift */; };
 		501F02601F7B79060029CBCE /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025F1F7B79060029CBCE /* StringTests.swift */; };
 		501F02621F7B79150029CBCE /* NSStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F02611F7B79150029CBCE /* NSStringTests.swift */; };
 		501F02631F7B7F360029CBCE /* IBAttributedStringEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F02551F7B70DC0029CBCE /* IBAttributedStringEnums.swift */; };
 		501F02641F7B7F3A0029CBCE /* IBStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F02571F7B71530029CBCE /* IBStringStyle.swift */; };
 		501F02651F7B7F3E0029CBCE /* NSAttributedString+IBStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F02591F7B72120029CBCE /* NSAttributedString+IBStringStyle.swift */; };
-		501F02661F7B7F410029CBCE /* NSString+IBStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025B1F7B742F0029CBCE /* NSString+IBStringStyle.swift */; };
-		501F02671F7B7F450029CBCE /* String+IBStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025D1F7B74520029CBCE /* String+IBStringStyle.swift */; };
+		501F02661F7B7F410029CBCE /* NSString+ParagraphRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025B1F7B742F0029CBCE /* NSString+ParagraphRanges.swift */; };
+		501F02671F7B7F450029CBCE /* String+ParagraphRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F025D1F7B74520029CBCE /* String+ParagraphRanges.swift */; };
 		50A7DF5E1F77A31B00D2B5ED /* IBAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A7DF541F77A31B00D2B5ED /* IBAttributedString.framework */; };
 		50A7DF631F77A31B00D2B5ED /* IBAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A7DF621F77A31B00D2B5ED /* IBAttributedStringTests.swift */; };
 		50A7DF651F77A31B00D2B5ED /* IBAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A7DF571F77A31B00D2B5ED /* IBAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,11 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5015E11A1F971BA700907538 /* IBParagraphStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBParagraphStyle.swift; sourceTree = "<group>"; };
+		5015E11C1F973A8C00907538 /* NSAttributedString+IBParagraphStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+IBParagraphStyle.swift"; sourceTree = "<group>"; };
+		5015E11E1F9742FD00907538 /* NSAttributedString+ParagraphRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+ParagraphRanges.swift"; sourceTree = "<group>"; };
+		5015E1201F97460600907538 /* NSAttributedString+ParagraphStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+ParagraphStyles.swift"; sourceTree = "<group>"; };
 		501F02551F7B70DC0029CBCE /* IBAttributedStringEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBAttributedStringEnums.swift; sourceTree = "<group>"; };
 		501F02571F7B71530029CBCE /* IBStringStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBStringStyle.swift; sourceTree = "<group>"; };
 		501F02591F7B72120029CBCE /* NSAttributedString+IBStringStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+IBStringStyle.swift"; sourceTree = "<group>"; };
-		501F025B1F7B742F0029CBCE /* NSString+IBStringStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+IBStringStyle.swift"; sourceTree = "<group>"; };
-		501F025D1F7B74520029CBCE /* String+IBStringStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IBStringStyle.swift"; sourceTree = "<group>"; };
+		501F025B1F7B742F0029CBCE /* NSString+ParagraphRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+ParagraphRanges.swift"; sourceTree = "<group>"; };
+		501F025D1F7B74520029CBCE /* String+ParagraphRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ParagraphRanges.swift"; sourceTree = "<group>"; };
 		501F025F1F7B79060029CBCE /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		501F02611F7B79150029CBCE /* NSStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStringTests.swift; sourceTree = "<group>"; };
 		50A7DF541F77A31B00D2B5ED /* IBAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,10 +101,14 @@
 				50A7DF581F77A31B00D2B5ED /* Info.plist */,
 				50A7DF571F77A31B00D2B5ED /* IBAttributedString.h */,
 				501F02551F7B70DC0029CBCE /* IBAttributedStringEnums.swift */,
+				5015E11A1F971BA700907538 /* IBParagraphStyle.swift */,
 				501F02571F7B71530029CBCE /* IBStringStyle.swift */,
+				5015E11C1F973A8C00907538 /* NSAttributedString+IBParagraphStyle.swift */,
 				501F02591F7B72120029CBCE /* NSAttributedString+IBStringStyle.swift */,
-				501F025B1F7B742F0029CBCE /* NSString+IBStringStyle.swift */,
-				501F025D1F7B74520029CBCE /* String+IBStringStyle.swift */,
+				5015E1201F97460600907538 /* NSAttributedString+ParagraphStyles.swift */,
+				5015E11E1F9742FD00907538 /* NSAttributedString+ParagraphRanges.swift */,
+				501F025B1F7B742F0029CBCE /* NSString+ParagraphRanges.swift */,
+				501F025D1F7B74520029CBCE /* String+ParagraphRanges.swift */,
 			);
 			path = IBAttributedString;
 			sourceTree = "<group>";
@@ -224,10 +236,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				501F02561F7B70DC0029CBCE /* IBAttributedStringEnums.swift in Sources */,
-				501F025C1F7B742F0029CBCE /* NSString+IBStringStyle.swift in Sources */,
+				501F025C1F7B742F0029CBCE /* NSString+ParagraphRanges.swift in Sources */,
 				501F02581F7B71530029CBCE /* IBStringStyle.swift in Sources */,
+				5015E11D1F973A8C00907538 /* NSAttributedString+IBParagraphStyle.swift in Sources */,
+				5015E1211F97460600907538 /* NSAttributedString+ParagraphStyles.swift in Sources */,
+				5015E11F1F9742FD00907538 /* NSAttributedString+ParagraphRanges.swift in Sources */,
+				5015E11B1F971BA700907538 /* IBParagraphStyle.swift in Sources */,
 				501F025A1F7B72120029CBCE /* NSAttributedString+IBStringStyle.swift in Sources */,
-				501F025E1F7B74520029CBCE /* String+IBStringStyle.swift in Sources */,
+				501F025E1F7B74520029CBCE /* String+ParagraphRanges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,9 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501F02661F7B7F410029CBCE /* NSString+IBStringStyle.swift in Sources */,
+				501F02661F7B7F410029CBCE /* NSString+ParagraphRanges.swift in Sources */,
 				501F02641F7B7F3A0029CBCE /* IBStringStyle.swift in Sources */,
-				501F02671F7B7F450029CBCE /* String+IBStringStyle.swift in Sources */,
+				501F02671F7B7F450029CBCE /* String+ParagraphRanges.swift in Sources */,
 				501F02601F7B79060029CBCE /* StringTests.swift in Sources */,
 				50A7DF631F77A31B00D2B5ED /* IBAttributedStringTests.swift in Sources */,
 				501F02631F7B7F360029CBCE /* IBAttributedStringEnums.swift in Sources */,

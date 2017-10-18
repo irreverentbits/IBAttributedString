@@ -18,25 +18,7 @@ extension NSString {
 			return NSRange(location: 0, length: length)
 		}
 	}
-	
-	var trueLength: Int {
-		get {
-			return 0
-//			self.enumerateSubstrings(in: fullRange, options: NSString.EnumerationOptions.byComposedCharacterSequences) { (substring: String?, substringRange: NSRange, enclosingRange: NSRange, stop: UnsafeMutablePointer<ObjCBool>) in
-//				print("\(substring) \(NSStringFromRange(substringRange))")
-//			}
-		}
-	}
-	
-	/**
-	A `Range` for the full length of the `NSString`.
-	*/
-//	var range: Range<String.Index> {
-//		get {
-//			return Range(nsRange, in: self as String)!
-//		}
-//	}
-	
+		
 	/**
 	Provides the range of each paragraph in the string or in a subrange of the `NSString`.
 	- parameter range: The subrange of the string over which paragraph ranges should be returned.
