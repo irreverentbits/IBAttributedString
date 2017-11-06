@@ -16,6 +16,11 @@ import Foundation
 import UIKit
 
 extension NSMutableAttributedString {
+	/// Convenience function for applying string styles to the provided character range of the string.
+	///
+	/// - Parameters:
+	///   - styles: An array of IBStringStyle enums that describe the styles to apply.
+	///   - onRange: The character range within the paragraphs on which the styles should be applied.
 	public func style(with styles: [IBStringStyle], onRange: NSRange? = nil) {
 		let range = onRange ?? NSRange(location: 0, length: self.length)
 		

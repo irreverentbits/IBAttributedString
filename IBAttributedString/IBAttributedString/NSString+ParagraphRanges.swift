@@ -15,9 +15,7 @@
 import Foundation
 
 extension NSString {
-	/**
-	An `NSRange` for the full length of the `NSString`.
-	*/
+	/// An `NSRange` for the full length of the `NSString`.
 	var nsRange: NSRange {
 		get {
 			// TODO: `length` isn't really adequate for all unicode :(
@@ -25,12 +23,11 @@ extension NSString {
 		}
 	}
 		
-	/**
-	Provides the range of each paragraph in the string or in a subrange of the `NSString`.
-	- parameter range: The subrange of the string over which paragraph ranges should be returned.
-	  Defaults to the full range of the `NSString`.
-	- returns: An array of the paragraph ranges occurring within the provided subrange.
-	*/
+	/// Provides the range of each paragraph in the string or in a subrange of the `NSString`.
+	///
+	/// - Parameter range: The subrange of the string over which paragraph ranges should be returned.
+	///                    Defaults to the full range of the `NSString`.
+	/// - Returns: An array of the paragraph ranges occurring within the provided subrange.
 	public func paragraphRanges(on range: NSRange? = nil) -> [NSRange] {
 		let range = range ?? nsRange
 		var ranges = [NSRange]()

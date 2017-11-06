@@ -14,9 +14,7 @@
 
 import Foundation
 
-/**
-Underline weight style. Maps to Apple's `NSUnderlineStyle` enum for those values that describe the number or weight of underlines.
-*/
+/// Underline weight style. Maps to Apple's `NSUnderlineStyle` enum for those values that describe the number or weight of underlines.
 public enum IBUnderlineWeight: Int {
 	case none = 0 			// NSUnderlineStyle.styleNone.rawValue
 	case single = 1 		// NSUnderlineStyle.styleSingle.rawValue
@@ -24,9 +22,7 @@ public enum IBUnderlineWeight: Int {
 	case thick = 2 			// NSUnderlineStyle.styleThick.rawValue
 }
 
-/**
-Underline pattern style. Maps to Apple's `NSUnderlineStyle` enum for those values that describe an underline pattern.
-*/
+/// Underline pattern style. Maps to Apple's `NSUnderlineStyle` enum for those values that describe an underline pattern.
 public enum IBUnderlinePattern: Int {
 	case solid = 0
 	case dot = 256			// NSUnderlineStyle.styleDot.rawValue
@@ -35,9 +31,7 @@ public enum IBUnderlinePattern: Int {
 	case dashDotDot = 1024	// NSUnderlineStyle.styleDashDotDot.rawValue
 }
 
-/**
-Underline grouping style. Maps to Apple's `NSUnderlineStyle` enum for either `complete` underlining or `byWord`.
-*/
+/// Underline grouping style. Maps to Apple's `NSUnderlineStyle` enum for either `complete` underlining or `byWord`.
 public enum IBUnderlineBy: Int {
 	case complete = 0
 	case byWord = 32768		// NSUnderlineStyle.byWord.rawValue

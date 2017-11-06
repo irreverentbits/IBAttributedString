@@ -15,6 +15,15 @@
 import Foundation
 
 extension NSMutableAttributedString {
+	/// Convenience function for applying paragraph styling to the paragraphs that fall
+	/// in a given character range of the string.
+	/// - Note: This function does not clear all previous styles before applying the provided styles.
+	///		  New styles are added and styles pre-existing on the paragraph are only changed if a new
+	///		  value for the style is provided.
+	///
+	/// - Parameters:
+	///   - styles: An array of IBParagraphStyle enums that describe the styles to apply.
+	///   - onRange: The character range within the paragraphs on which the styles should be applied.
 	public func styleParagraphs(with styles: [IBParagraphStyle], onRange: NSRange? = nil) {
 		let range = onRange ?? NSRange(location: 0, length: self.length)
 		
@@ -26,6 +35,14 @@ extension NSMutableAttributedString {
 		}
 	}
 	
+	/// Convenience function for applying paragraph styling to the paragraph at the provided paragraph index in the string.
+	/// - Note: This function does not clear all previous styles before applying the provided styles.
+	///		  New styles are added and styles pre-existing on the paragraph are only changed if a new
+	///		  value for the style is provided.
+	///
+	/// - Parameters:
+	///   - styles: An array of IBParagraphStyle enums that describe the styles to apply to the single paragraph.
+	///   - index: The paragraph index (zero based) of the paragraph to which the styling should be applied.
 	public func styleParagraph(with styles: [IBParagraphStyle], at index: Int) {
 		let ranges = paragraphRanges()
 		

@@ -15,11 +15,9 @@
 import Foundation
 import UIKit
 
-/**
-`IBStringStyle` provides a method for describing string style options and their values. Paired with the
-`NSMutableAttributedString` extension function for applying an array of `IBStringStyle` enumerations, `IBStringStyle`
-allows concise application of string styles.
-*/
+/// `IBStringStyle` provides a method for describing string style options and their values. Paired with the
+/// `NSMutableAttributedString` extension function for applying an array of `IBStringStyle` enumerations, `IBStringStyle`
+/// allows concise application of string styles.
 public enum IBStringStyle {
 	// Character styles
 	case font(UIFont)
@@ -42,11 +40,9 @@ public enum IBStringStyle {
 	//    case writingDirection() 	// This is complicated. Needs more investigation.
 	//    case verticalGlyphForm() 	// Currently ignored on iOS. Only horizontal glyphs are supported.
 	
-	/**
-	Produces an `NSAttributedString` style dictionary from an array of `IBParagraphStyle` enums.
-	- Parameter styles: An array of `IBStringStyle` enums that describe the styles to include in the style dictionary.
-	- Returns: A dictionary of `NSAttributedString` style keys and values.
-	*/
+	/// Produces an `NSAttributedString` style dictionary from an array of `IBParagraphStyle` enums.
+	/// - Parameter styles: An array of `IBStringStyle` enums that describe the styles to include in the style dictionary.
+	/// - Returns: A dictionary of `NSAttributedString` style keys and values.
 	static func attributesDict(for styles: [IBStringStyle]) -> [NSAttributedStringKey: AnyObject] {
 		var attributes = [NSAttributedStringKey: AnyObject]()
 		
