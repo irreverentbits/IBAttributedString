@@ -23,10 +23,10 @@ class NSStringTests: IBAttributedStringTests {
 		var trueLength: Int = 0
 		string.enumerateSubstrings(in: fullRange, options: NSString.EnumerationOptions.byComposedCharacterSequences) { (substring: String?, substringRange: NSRange, enclosingRange: NSRange, stop: UnsafeMutablePointer<ObjCBool>) in
 			trueLength += 1
-			print("\(substring) \(NSStringFromRange(substringRange))")
+			print("\(substring ?? "") \(NSStringFromRange(substringRange))")
 		}
 		
-		print("length: \(string.length), trueLength: \(trueLength), stringLength: \((string as String).characters.count)")
+		print("length: \(string.length), trueLength: \(trueLength), stringLength: \((string as String).count)")
 	}
 	
 //	func testEmojiStringNSRange() {

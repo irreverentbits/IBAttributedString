@@ -31,7 +31,7 @@ extension NSMutableAttributedString {
 			let (style, range) = arg
 			
 			let newStyle = IBParagraphStyle.paragraphStyle(for: styles, overwriting: style)
-			addAttribute(NSAttributedStringKey.paragraphStyle, value: newStyle, range: range)
+			addAttribute(NSAttributedString.Key.paragraphStyle, value: newStyle, range: range)
 		}
 	}
 	

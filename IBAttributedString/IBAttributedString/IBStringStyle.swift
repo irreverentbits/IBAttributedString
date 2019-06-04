@@ -43,56 +43,56 @@ public enum IBStringStyle {
 	/// Produces an `NSAttributedString` style dictionary from an array of `IBParagraphStyle` enums.
 	/// - Parameter styles: An array of `IBStringStyle` enums that describe the styles to include in the style dictionary.
 	/// - Returns: A dictionary of `NSAttributedString` style keys and values.
-	static func attributesDict(for styles: [IBStringStyle]) -> [NSAttributedStringKey: AnyObject] {
-		var attributes = [NSAttributedStringKey: AnyObject]()
+	static func attributesDict(for styles: [IBStringStyle]) -> [NSAttributedString.Key: AnyObject] {
+		var attributes = [NSAttributedString.Key: AnyObject]()
 		
 		for style in styles {
 			switch style {
 			case .font(let font):
-				attributes[NSAttributedStringKey.font] = font
+				attributes[NSAttributedString.Key.font] = font
 				
 			case .color(let color):
-				attributes[NSAttributedStringKey.foregroundColor] = color
+				attributes[NSAttributedString.Key.foregroundColor] = color
 				
 			case .backgroundColor(let color):
-				attributes[NSAttributedStringKey.backgroundColor] = color
+				attributes[NSAttributedString.Key.backgroundColor] = color
 				
 			case .ligature(let hasLigature):
-				attributes[NSAttributedStringKey.ligature] = NSNumber(value: hasLigature)
+				attributes[NSAttributedString.Key.ligature] = NSNumber(value: hasLigature)
 				
 			case .kern(let kern):
-				attributes[NSAttributedStringKey.kern] = NSNumber(value: kern)
+				attributes[NSAttributedString.Key.kern] = NSNumber(value: kern)
 				
 			case .strikeThroughStyle(let weight, let pattern, let by, let color):
-				attributes[NSAttributedStringKey.strikethroughStyle] = NSNumber(value: weight.rawValue | pattern.rawValue | by.rawValue)
-				attributes[NSAttributedStringKey.strikethroughColor] = color
+				attributes[NSAttributedString.Key.strikethroughStyle] = NSNumber(value: weight.rawValue | pattern.rawValue | by.rawValue)
+				attributes[NSAttributedString.Key.strikethroughColor] = color
 				
 			case .underlineStyle(let weight, let pattern, let by, let color):
-				attributes[NSAttributedStringKey.underlineStyle] = NSNumber(value: weight.rawValue | pattern.rawValue | by.rawValue)
-				attributes[NSAttributedStringKey.underlineColor] = color
+				attributes[NSAttributedString.Key.underlineStyle] = NSNumber(value: weight.rawValue | pattern.rawValue | by.rawValue)
+				attributes[NSAttributedString.Key.underlineColor] = color
 				
 			// case .strokeColor(UIColor) // This is the same as the foreground color, so we'll ignore it
 				
 			case .strokeWidth(let width):
-				attributes[NSAttributedStringKey.strokeWidth] = NSNumber(value: width)
+				attributes[NSAttributedString.Key.strokeWidth] = NSNumber(value: width)
 				
 			case .shadow(let shadow):
-				attributes[NSAttributedStringKey.shadow] = shadow
+				attributes[NSAttributedString.Key.shadow] = shadow
 				
 			case .textEffect(let effect):
-				attributes[NSAttributedStringKey.textEffect] = effect as NSString
+				attributes[NSAttributedString.Key.textEffect] = effect as NSString
 				
 			case .link(let url):
-				attributes[NSAttributedStringKey.link] = url as NSURL
+				attributes[NSAttributedString.Key.link] = url as NSURL
 				
 			case .baselineOffset(let offset):
-				attributes[NSAttributedStringKey.baselineOffset] = NSNumber(value: offset)
+				attributes[NSAttributedString.Key.baselineOffset] = NSNumber(value: offset)
 				
 			case .obliqueness(let obliqueness):
-				attributes[NSAttributedStringKey.obliqueness] = NSNumber(value: obliqueness)
+				attributes[NSAttributedString.Key.obliqueness] = NSNumber(value: obliqueness)
 				
 			case .expansion(let expansion):
-				attributes[NSAttributedStringKey.expansion] = NSNumber(value: expansion)
+				attributes[NSAttributedString.Key.expansion] = NSNumber(value: expansion)
 			}
 		}
 		

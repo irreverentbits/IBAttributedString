@@ -28,7 +28,7 @@ extension NSMutableAttributedString {
 		paragraphRanges(on: range).forEach {
 			var style: NSParagraphStyle
 			
-			if let existingStyle = attribute(NSAttributedStringKey.paragraphStyle, at: $0.location, effectiveRange: nil) as? NSParagraphStyle {
+			if let existingStyle = attribute(NSAttributedString.Key.paragraphStyle, at: $0.location, effectiveRange: nil) as? NSParagraphStyle {
 				style = existingStyle
 			} else {
 				style = NSMutableParagraphStyle()
